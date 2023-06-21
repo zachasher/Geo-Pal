@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./homepage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>GEO PAL</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <h1 class="header__title">GEO PAL</h1>
+        <h2 class="header__info">Countries of the World</h2>
+      </div>
+    </header>
+
+    <section class="search">
+      <div class="search__box">
+        <label for="searchbar" class="search__title">Search</label>
+        <div class="search__line">
+          <input
+            type="text"
+            name="searchbar"
+            class="search__bar"
+            placeholder="Type a country name..."
+          />
+          <button class="search__button">SUBMIT</button>
+        </div>
+        <button class="random-button">RANDOM COUNTRY</button>
+      </div>
+    </section>
+
+    <section class="country">
+      <div class="country__box">
+        <h2 class="country__name">COUNTRY NAME</h2>
+        <div class="country__stats">
+          <article class="country__info">COUNTRY INFO</article>
+          <article class="country__flag">FLAG</article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h2 class="footer__name">ZACH ASHER</h2>
+      <div class="footer__icons">
+        <a target="_blank" href="https://www.linkedin.com/in/zachasher/"><img class="footer__icon" src="./icons8-linkedin.svg"></a>
+        <a target="_blank" href="https://github.com/zachasher"><img class="footer__icon" src="./icons8-github.svg"></a>
+      </div>
+      <p class="footer__copyright">Copyright © 2023</p>
+    </footer>
+  </body>
+</html>
