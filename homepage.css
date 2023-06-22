@@ -64,7 +64,7 @@ body {
 }
 @media (min-width: 600px) {
   .search__bar {
-    width: 50%;
+    width: 300px;
   }
 }
 .search__line {
@@ -74,7 +74,7 @@ body {
   align-items: center;
 }
 .search__button {
-  width: 30%;
+  width: 100px;
   background-color: black;
   color: whitesmoke;
   padding: 0.5rem;
@@ -83,19 +83,29 @@ body {
   border-radius: 5px;
   font-weight: bold;
 }
+@media (min-width: 600px) {
+  .search__button {
+    width: 100px;
+  }
+}
 
 input {
   color: black;
 }
 
 .random-button {
-  width: 30%;
+  width: 150px;
   background-color: seagreen;
   color: whitesmoke;
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 5px;
   font-weight: bold;
+}
+@media (min-width: 600px) {
+  .random-button {
+    width: 150px;
+  }
 }
 
 .country {
@@ -106,10 +116,8 @@ input {
 }
 .country__name {
   display: flex;
-  width: 50%;
   border-radius: 5px;
   align-items: center;
-  justify-content: center;
   padding-bottom: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -130,7 +138,7 @@ input {
 @media (min-width: 600px) {
   .country__stats {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -147,8 +155,13 @@ input {
 }
 @media (min-width: 600px) {
   .country__info {
-    width: 47.5%;
+    width: 250px;
+    margin-right: 1rem;
   }
+}
+.country__info p {
+  display: flex;
+  flex-wrap: wrap;
 }
 .country__flag {
   display: flex;
@@ -163,8 +176,8 @@ input {
 @media (min-width: 600px) {
   .country__flag {
     padding: 0;
-    margin: 1rem 0;
-    width: 47.5%;
+    margin: 1rem 0 1rem 1rem;
+    width: 250px;
   }
 }
 

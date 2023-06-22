@@ -15,6 +15,8 @@ body {
   }
 }
 
+
+
 .header {
   display: flex;
   justify-content: center;
@@ -80,7 +82,7 @@ body {
     margin: 0.5rem;
 
     @include media-tablet {
-      width: 50%;
+      width: 300px;
     }
   }
 
@@ -92,7 +94,7 @@ body {
   }
 
   &__button {
-    width: 30%;
+    width: 100px;
     background-color: black;
     color: whitesmoke;
     padding: 0.5rem;
@@ -100,6 +102,10 @@ body {
     border: none;
     border-radius: 5px;
     font-weight: bold;
+
+    @include media-tablet {
+      width: 100px;
+    }
   }
 }
 
@@ -108,7 +114,7 @@ input {
 }
 
 .random-button {
-  width: 30%;
+  width: 150px;
   background-color: seagreen;
   color: whitesmoke;
   padding: 0.5rem;
@@ -116,6 +122,10 @@ input {
   // border: 2px solid black;
   border-radius: 5px;
   font-weight: bold;
+
+  @include media-tablet {
+    width: 150px;
+  }
 }
 
 .country {
@@ -126,10 +136,8 @@ input {
 
   &__name {
     display: flex;
-    width: 50%;
     border-radius: 5px;
     align-items: center;
-    justify-content: center;
     padding-bottom: 1rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -153,7 +161,7 @@ input {
 
     @include media-tablet {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
     }
   }
@@ -172,8 +180,14 @@ input {
     flex-wrap: wrap;
 
     @include media-tablet {
-      width: 47.5%;
+      width: 250px;
+      margin-right: 1rem;
     }
+  }
+
+  &__info p {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__flag {
@@ -189,8 +203,8 @@ input {
 
     @include media-tablet {
       padding: 0;
-      margin: 1rem 0;
-      width: 47.5%;
+      margin: 1rem 0 1rem 1rem;
+      width: 250px
     }
   }
 }
